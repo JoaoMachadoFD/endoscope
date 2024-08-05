@@ -1,0 +1,125 @@
+.album-tree {
+  width: 250px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  padding-bottom: 1000%;
+}
+
+.album-container {
+  padding-right: 20px;
+}
+
+.album-tree ul {
+  list-style: none;
+  padding: 0;
+}
+
+.album {
+  display: flex; /* Use flexbox to align items */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Center items vertically */
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.album:hover {
+  background-color: #e0e0e0;
+}
+
+.album.selected {
+  background-color: #007aff;
+  color: #fff;
+}
+
+.image-count-bubble {
+  border: 1px solid #0056b3; 
+  color: #0056b3;
+  padding: 4px 7px;
+  border-radius: 50%; /* Circle shape */
+  font-size: 11px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0; /* Align menu to the right */
+  background-color: #fff; /* Set background color */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Ensure dropdown menu is above other content */
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.sub-albums {
+  margin-left: 20px; /* Add left margin to indent subdirectories */
+}
+
+.about-links-container {
+  margin-top: 10px;
+}
+
+.about-link {
+  display: block;
+  padding: 10px;
+  background-color: #f5f5f5; /* Match the background color of .album */
+  color: #000; /* Adjust text color */
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.about-link:hover {
+  background-color: #e0e0e0; /* Hover effect similar to .album:hover */
+}
+
+
+.create-directory-button {
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  border: none; /* Remove border */
+  padding: 8px 16px; /* Padding */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  border-radius: 4px; /* Rounded corners */
+  margin-bottom: 10px; /* Add margin to the bottom */
+}
+
+.create-directory-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+

@@ -1,0 +1,112 @@
+.register-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Adjust alignment to start */
+  min-height: 100vh; /* Use min-height to ensure it can expand */
+  background-color: #f0f0f0;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.register-card {
+  width: 100%; /* Use full width */
+  max-width: 400px;
+  padding: 10px 20px; /* Adjust padding for content */
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.register-card h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  top: -10%;
+  transform: translateY(-50%);
+  color: #ccc;
+  padding-left: 15px;
+}
+
+.input-icon svg {
+  height: 20px;
+  width: 20px;
+}
+
+.register-form input[type="text"],
+.register-form input[type="password"],
+.register-form input[type="email"],
+.register-form button {
+  width: calc(100% - 40px);
+  margin-bottom: 20px;
+  padding: 15px;
+  padding-left: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.register-form-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.register-form button:hover {
+  background-color: #0056b3;
+}
+
+.login-message {
+  text-align: center;
+}
+
+.login-message p {
+  margin-bottom: 0;
+}
+
+.login-message button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.login-message button:hover {
+  color: #0056b3;
+}
+
+.input-group .custom-select-wrapper select {
+  width: calc(100%);
+  padding: 10px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  appearance: none; /* Remove default arrow */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="black"><path d="M7 10l5 5 5-5z" /></svg>'); /* Custom arrow */
+  background-repeat: no-repeat;
+  background-position: right 1px center;
+  background-size: 20px;
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+}
+
+.input-group .custom-select-wrapper select::-ms-expand {
+  display: none; /* Remove default arrow in IE */
+}
+
+.input-group .react-datepicker-wrapper {
+  width: 100%;
+}
